@@ -39,20 +39,9 @@ A Chrome extension that allows users to highlight text on any webpage and save i
    - Highlight text on any webpage, right-click, and select "Save to Sheet".
    - Check the Google Sheet to verify the data (text, URL, title, timestamp) is appended.
 
-## Known Limitations
+## Limitations
 - **Google Apps Script Web App Access**: The Web App is set to "Anyone" for simplicity, which may not be suitable for sensitive data. For production, implement OAuth2 authentication for secure access.
-- **Rate Limits**: Google Apps Script and Google Sheets have quotas (e.g., 20,000 requests/day for free accounts). Heavy usage may hit these limits.
-- **Error Handling**: Basic error handling is implemented. For production, enhance with user notifications (e.g., popup alerts) for failed requests.
-- **Cross-Origin Requests**: Ensure the Google Apps Script Web App URL is correctly configured in `host_permissions` to avoid CORS issues.
-- **No UI Feedback**: The extension logs success/errors to the console. A future version could add a popup for user feedback.
+- **Rate Limits**: Google Apps Script and Google Sheets have quotas, 20,000 requests/day for free accounts.
 
-## Demo Video Instructions
-To create a demo video:
-1. Record your screen using software like OBS Studio or Loom.
-2. Show the following steps:
-   - Highlight text on a webpage.
-   - Right-click and select "Save to Sheet".
-   - Open the Google Sheet to show the new row with the highlighted text, URL, title, and timestamp.
-3. Keep the video between 3–5 minutes, focusing on the core functionality.
 
-## Folder Structure
+
